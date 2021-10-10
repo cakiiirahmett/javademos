@@ -1,4 +1,4 @@
-# javademos
+# Hakkımda
 Java'da Öğrendiklerimi Buraya Aktarıyorum.
 
 Yakında Zamanda Android Ve Kotlin Kısmına Başlıyacağım
