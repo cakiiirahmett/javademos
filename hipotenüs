@@ -15,7 +15,7 @@ public class Main {
         b=scanner.nextInt();
 
         double h=Math.sqrt(a*a+b*b);
-        System.out.println("Hiptenüs : "+h);
+        System.out.println("Hipotenüs : "+h);
 
 
 
