@@ -6,46 +6,46 @@ public class Main {
 
         Scanner scanner=new Scanner(System.in);
 
-        int bakiye=100;
-        String islemler="1.İşlem : Bakiye Öğrenme \n" +
-                "2.İşlem : Para Çekme \n" +
-                "3.İşlem :Para Yatırma\n" +
-                "Çıkış için q'ya basını. ";
+        int balance=100;
+        String transactions="1. Process: Balance Learning\n" +
+                "2. Process: Withdrawal\n" +
+                "3. Process : Deposit\n" +
+                "Press q to exit. ";
         System.out.println("***************************");
-        System.out.println(islemler);
+        System.out.println(transactions);
         System.out.println("***************************");
 
         while (true){
 
 
-            System.out.print("İşlem Seçiniz : ");
-            String islem=scanner.nextLine();
+            System.out.print("Select Transaction : ");
+            String process=scanner.nextLine();
 
-            if (islem.equals("q")){
-                System.out.println("İşlemden Çıkılıyor...");
+            if (process.equals("q")){
+                System.out.println("Exiting Process...");
                 break;
-            }else if (islem.equals("1")){
-                System.out.println("Bakiyeniz : "+bakiye);
-            }else if (islem.equals("2")){
-                System.out.print("Ne Kadar Çekiceksiniz :");
-                int tutar=scanner.nextInt();
+            }else if (process.equals("1")){
+                System.out.println("Your Balance : "+balance);
+            }else if (process.equals("2")){
+                System.out.print("How Much Will You Draw? :");
+                int amount=scanner.nextInt();
                 scanner.nextLine();
 
-                if (bakiye-tutar <0){
-                    System.out.println("Yeterli Bakiyeniz Yoktur..");
+                if (balance-amount <0){
+                    System.out.println("You Don't Have Enough Balance..");
                 }else {
-                    bakiye-=tutar;
-                    System.out.println("Güncel Bakiyeniz : "+bakiye);
+                    balance-=amount;
+                    System.out.println("Your Current Balance : "+balance);
                 }
-            }else if (islem.equals("3")){
+            }else if (process.equals("3")){
 
-                System.out.print("Ne Kadar Yatıracaksınız : ");
-                int tutar=scanner.nextInt();
+                System.out.print("How Much Will You Deposit : ");
+                int amount=scanner.nextInt();
                 scanner.nextLine();
 
-                bakiye+=tutar;
+                balance+=amount;
 
-                System.out.println("Güncel Bakiyeniz : "+bakiye);
+                System.out.println("Your Current Balance : "+balance);
 
 
             }
