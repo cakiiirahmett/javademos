@@ -9,13 +9,13 @@ public class Main {
         int a;
         int b;
 
-        System.out.print("Birinici Kenar : ");
+        System.out.print("First Edge : ");
         a=scanner.nextInt();
-        System.out.print("İkinci Kenar : ");
+        System.out.print("Second Edge : ");
         b=scanner.nextInt();
 
         double h=Math.sqrt(a*a+b*b);
-        System.out.println("Hipotenüs : "+h);
+        System.out.println("Hypotenuse : "+h);
 
 
 
